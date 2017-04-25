@@ -5,17 +5,127 @@
     "directories": {
       "baseURL": "src"
     },
+    "dependencies": {
+      "@angular/upgrade": "npm:@angular/upgrade@^4.0.3",
+      "ionic": "github:driftyco/ionic-bower@^1.3.3",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.10"
+    },
     "devDependencies": {
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.21"
+    },
+    "peerDependencies": {
+      "@angular/common": "npm:@angular/common@4.0.3",
+      "@angular/compiler": "npm:@angular/compiler@4.0.3",
+      "@angular/core": "npm:@angular/core@4.0.3",
+      "@angular/platform-browser": "npm:@angular/platform-browser@^4.0.3",
+      "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@4.0.3",
+      "assert": "npm:jspm-nodelibs-assert@^0.2.0",
+      "buffer": "npm:jspm-nodelibs-buffer@^0.2.0",
+      "constants": "npm:jspm-nodelibs-constants@^0.2.0",
+      "crypto": "npm:jspm-nodelibs-crypto@^0.2.0",
+      "events": "npm:jspm-nodelibs-events@^0.2.0",
+      "fs": "npm:jspm-nodelibs-fs@^0.2.0",
+      "os": "npm:jspm-nodelibs-os@^0.2.0",
+      "path": "npm:jspm-nodelibs-path@^0.2.0",
+      "process": "npm:jspm-nodelibs-process@^0.2.0",
+      "rxjs": "npm:rxjs@^5.0.1",
+      "stream": "npm:jspm-nodelibs-stream@^0.2.0",
+      "string_decoder": "npm:jspm-nodelibs-string_decoder@^0.2.0",
+      "timers": "npm:jspm-nodelibs-timers@^0.2.0",
+      "util": "npm:jspm-nodelibs-util@^0.2.0",
+      "vm": "npm:jspm-nodelibs-vm@^0.2.0",
+      "zone.js": "npm:zone.js@^0.8.8"
+    },
+    "overrides": {
+      "github:angular/bower-angular-animate@1.6.4": {
+        "main": "angular-animate",
+        "registry": "jspm",
+        "dependencies": {
+          "angular": "^1.3.0"
+        },
+        "meta": {
+          "angular-animate.js": {
+            "deps": [
+              "angular"
+            ],
+            "format": "global"
+          }
+        }
+      },
+      "github:angular/bower-angular-sanitize@1.6.4": {
+        "main": "angular-sanitize",
+        "registry": "jspm",
+        "dependencies": {
+          "angular": "^1.3.0"
+        },
+        "meta": {
+          "angular-sanitize.js": {
+            "deps": [
+              "angular"
+            ],
+            "format": "global"
+          }
+        }
+      },
+      "github:angular/bower-angular@1.6.4": {
+        "main": "angular",
+        "meta": {
+          "angular.js": {
+            "exports": "angular",
+            "format": "global"
+          }
+        }
+      },
+      "github:driftyco/ionic-bower@1.3.3": {
+        "registry": "jspm",
+        "main": "js/ionic-angular",
+        "dependencies": {
+          "css": "^0.1.5",
+          "angular": "^1.3.6",
+          "angular-animate": "^1.3.6",
+          "angular-sanitize": "^1.3.6",
+          "angular-ui-router": "0.2.13"
+        },
+        "meta": {
+          "js/ionic-angular.js": {
+            "deps": [
+              "../css/ionic.css!",
+              "./ionic",
+              "angular",
+              "angular-animate",
+              "angular-sanitize",
+              "angular-ui-router"
+            ],
+            "exports": "ionic",
+            "format": "global"
+          }
+        }
+      },
+      "npm:inherits@2.0.3": {
+        "ignore": [
+          "test.js"
+        ]
+      },
+      "npm:reflect-metadata@0.1.10": {
+        "jspmNodeConversion": false,
+        "map": {
+          "crypto": {
+            "node": "@node/crypto",
+            "default": "@empty"
+          }
+        }
+      }
     }
   },
   "dependencies": {
     "babel": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
     "del": "^2.2.2",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-babel": "^6.1.2",
     "gulp-cached": "^1.1.1",
     "gulp-coffee": "^2.3.4",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "ionic": "^2.2.3"
   }
 }

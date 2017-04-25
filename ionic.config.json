@@ -1,0 +1,7 @@
+{
+  "name": "PrimeAlert Responder",
+  "app_id": "b510d567",
+  "documentRoot": "src",
+  "createDocumentRoot": "src",
+  "watchPatterns": [ "src/*" ]
+}
