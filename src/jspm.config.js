@@ -45,6 +45,7 @@ SystemJS.config({
     "@angular/common": "npm:@angular/common@4.0.3",
     "@angular/compiler": "npm:@angular/compiler@4.0.3",
     "@angular/core": "npm:@angular/core@4.0.3",
+    "@angular/forms": "npm:@angular/forms@4.0.3",
     "@angular/platform-browser": "npm:@angular/platform-browser@4.0.3",
     "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@4.0.3",
     "@angular/upgrade": "npm:@angular/upgrade@4.0.3",

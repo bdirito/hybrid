@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { UpgradeModule } from '@angular/upgrade/bundles/upgrade-static.umd'
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { HeroDetailComponent } from 'hero-detail.component'
 
@@ -12,6 +13,7 @@ export class AppModule
             imports: [
                 BrowserModule
                 UpgradeModule
+                ReactiveFormsModule
             ]
             declarations: [
                 HeroDetailComponent
@@ -19,6 +21,11 @@ export class AppModule
             # remove for outer 2
             entryComponents: [
                 HeroDetailComponent
+            ]
+            providers: [
+                provide: 'HeroList'
+                useFactory: (i) -> i.get 'heroslist'
+                deps: [ '$injector' ]
             ]
             # add for outer 2
             # bootstrap: [
